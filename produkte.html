@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Firma</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        #footer td,
+        #footer td * {
+            vertical-align: top;
+        }
+        
+        #products {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #products td, #products th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #products tr:nth-child(even){background-color: #f2f2f2;}
+        #products tr:nth-child(odd){background-color: #e9e9e9;}
+
+        #products tr:hover {background-color: #ddd;}
+
+        #products th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: #d0f7ff; margin: 0">
+    <table style="background-color: white; width: 100%; padding: 20px 0px">
+        <tr>
+            <td width="20%"></td>
+            <td width="60%">
+                <div>
+                    <a href="index.html">
+                        <img src="logo.png" width="120px" />
+                    </a>
+                    <font size="4" style="float: right;margin-top: 10px">
+                        <b>
+                            <a href="index.html#features" style="margin: 10px; text-decoration: none;">Features</a>
+                            <a href="#reviews" style="margin: 10px; text-decoration: none;">Rezensionen</a>
+                            <a href="#newsletter" style="margin: 10px; text-decoration: none;">Newsletter</a>
+                            <a href="produkte.html" style="margin: 10px; text-decoration: underline;">Produkte</a>
+                            <a href="film_praesentation.html" style="margin: 10px; text-decoration: none;">Film</a>
+                        </b>
+                    </font>
+                </div>
+            </td>
+            <td width="20%"></td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 30px 0px">
+        <tr>
+            <td width="20%"></td>
+            <td width="30%">
+                <h1>Willkommen auf unserer super tollen Seite</h1>
+                <br/>
+                <br/>
+                <h2 id="features">Wir haben alles was Sie benötigen</h2>
+            </td>
+            <td width="30%">
+                <img src="illustration-super.png" width="100%">
+            </td>
+
+            <td width="20%"></td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 5px 0px">
+        <tr>
+            <td width="20%"></td>
+            <td width="60%">
+                <!-- Hier kommt ein total interessanter text -->
+                <p>
+                    <h3>Hier sehen Sie unsere riesige Auswahl an Produkten</h3>
+                    <form action="success.html" method="post">
+                    <table id="products">
+                      <tr>
+                        <th>
+                          Bestellen?
+                        </th>
+                        <th>
+                          Produkt
+                        </th>
+                        <th>
+                          Preis
+                        </th>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="b-text"></td>
+                        <td><b>Fetter Text</b></td>
+                        <td>13,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="i-text"></td>
+                        <td><i>Kursiver Text</i></td>
+                        <td>8,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="u-text"></td>
+                        <td><u>Unterstrichener Text</u></td>
+                        <td>9,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="bi-text"></td>
+                        <td><b><i>Fetter & Kursiver Text</i></b></td>
+                        <td>22,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="bu-text"></td>
+                        <td><b><u>Fetter & Unterstrichener Text</u></b></td>
+                        <td>23,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="iu-text"></td>
+                        <td><i><u>Kursiver und Unterstrichener Text</u></i></td>
+                        <td>15,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="biu-text"></td>
+                        <td><b><i><u>Fetter, Kursiver und Unterstrichener Text</u></i></b></td>
+                        <td>30,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="h1-text"></td>
+                        <td><h1 style="margin: 0">Überschrift 1</h1></td>
+                        <td>70,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="h2-text"></td>
+                        <td><h2 style="margin: 0">Überschrift 2</h2></td>
+                        <td>60,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="h3-text"></td>
+                        <td><h3 style="margin: 0">Überschrift 3</h3></td>
+                        <td>50,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="h4-text"></td>
+                        <td><h4 style="margin: 0">Überschrift 4</h4></td>
+                        <td>40,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="h5-text"></td>
+                        <td><h5 style="margin: 0">Überschrift 5</h5></td>
+                        <td>30,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="h6-text"></td>
+                        <td><h6 style="margin: 0">Überschrift 6</h6></td>
+                        <td>20,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="red-text"></td>
+                        <td><font color="red">Roter Text</font></td>
+                        <td>10,99 €</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="blue-text"></td>
+                        <td><font color="blue">Blauer Text</font></td>
+                        <td>10,99 €</td>
+                      </tr>
+                    </table>
+                    <button>Bestellen</button>
+
+                    <h3>Desweiteren bieten wir die folgenden überragenden Dienstleisungen an</h3>
+                    <ol>
+                      <li>Beratung</li>
+                      <li>Analyse von Anforderungen</li>
+                      <li>Custom Produkt Erstellung</li>
+                      <li>Support</li>
+                      <li>Vorort Service</li>
+                    </ol>
+                    </form>
+                </p>
+            </td>
+            <td width="20%"></td>
+        </tr>
+    </table>
+
+
+    <table id="location" style="background-color: #fffbd0; width: 100%; padding: 30px 0px">
+        <tr>
+            <td width="20%"></td>
+            <td width="60%">
+
+                <p>
+                    <h3>Weltweiter Versand</h3>
+                    <img src="weltweiter-versand.jpg">
+                    <br/>
+                    <br/>
+
+            </td>
+            <td width="20%"></td>
+        </tr>
+    </table>
+
+    <table id="reviews" style="background-color: #ddffd0; width: 100%; padding: 30px 0px">
+        <tr>
+            <td width="20%"></td>
+            <td width="60%">
+
+                <p>
+                    <h3>Unsere Kunden sind überzeugt:</h3>
+                    <blockquote>
+                        <table>
+                            <tr>
+                                <td width="25%">
+                                    <img src="thumbsUpPerson.png" width="100%">
+                                </td>
+                                <td width="75%">
+                                    "Diese Firma hat mein Leben verändert,
+                                    <br/> eine so farbige und gleichzeitig kursive Schrift konnte mir kein anderer Anbieter anzeigen"
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td width="60%" style="text-align: right">
+                                    "Super! Schnelle Lieferung und sehr gute Qualität"
+                                </td>
+                                <td width="40%">
+                                    <img src="thumbsUpPerson3.png" width="100%">
+                                </td>
+                            </tr>
+                        </table>
+                    </blockquote>
+
+                    <br/>
+                    <br/>
+                    <br/>
+
+            </td>
+            <td width="20%"></td>
+        </tr>
+    </table>
+
+    <table id="footer" style="background: #bfbfbf; width: 100%; padding: 10px 0px">
+        <tr>
+            <td width="20%"></td>
+            <td width="20%">
+                <h4>Kontakt</h4>
+                <div>Unterstützung und Beratung unter:</div>
+                <font size="5">
+                    <a href="tel:+49221123456">0221-123456</a>
+                </font>
+                <br>
+                <br>
+                <div>Oder über unser <a href="kontakt.html">Kontaktformular</a></div>
+            </td>
+            <td width="15%">
+                <h4>Über uns</h4>
+                <a href="impressum.html">AGB</a>
+                <br>
+                <a href="impressum.html">Widerrufsrecht</a>
+                <br>
+                <a href="impressum.html">Impressum</a>
+                <br>
+                <a href="impressum.html">Datenschutzerklärung</a>
+            </td>
+            <td width="25%">
+                <h4 id="newsletter">Newsletter:</h4>
+                <div>Melden Sie sich jetzt zu unserem Atemberaubenden Newsletter an!</div>
+                <div><i>Damit Sie keine Spam Email mehr verpassen</i></div>
+                <br/>
+                <form action="">
+                    <label>Email-Adresse</label>
+                    <input type="text" placeholder="Email" name="email">
+                    <br>
+                    <br>
+                    <button style="width: 100%; padding: 5px; cursor: pointer;">Jetzt kostenlos anmelden</button>
+                </form>
+
+                </p>
+
+            </td>
+            <td width="20%"></td>
+        </tr>
+    </table>
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>
